@@ -1,15 +1,8 @@
-<?php
-
-$connect = mysqli_connect("127.0.0.1","root","","test");
-#mysqli_select_db($connect,"v-u-a-p");
-
-?>
-
 <!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>Boots!</title>
+    <title>Music Player!</title>
     <meta charset="utf-8">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -18,8 +11,12 @@ $connect = mysqli_connect("127.0.0.1","root","","test");
 </head>
 
 <body>
-	
     <table class="table table-dark">
+		<thead>
+			<tr>
+				<td colspan = "4"></th><input type="button" value="BACK" onclick="location.href='index.html';"</input></td>
+			</tr>
+		</thead>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -30,40 +27,40 @@ $connect = mysqli_connect("127.0.0.1","root","","test");
         </tr>
       </thead>
       <tbody>
-		<tr class='clickable-row' data-href='url://music.html?id=audio/1.mp3'>
+		<tr>
 		  <th scope="row">1</th>
 		  <td>Back in Black</td>
 		  <td>AC-DC</td>
 		  <td>Back in Black</td>
-		  <td><input type="button" value="PLAY" onclick="location.href='watch.html?id=1&t=music';"</input> </td>
+		  <td><input type="button" value="PLAY" onclick="location.href='music1.html';"</input> </td>
 		</tr>
-        <tr class='clickable-row' data-href='C:/xampp/htdocs/test2/audio/2.mp3'>
+        <tr>
           <th scope="row">2</th>
           <td>Sunday Morning</td>
           <td>Maroon 5</td>
           <td>Plain Jane</td>
-          <td><input type="button" value="PLAY" onclick="location.href='watch.html?id=2&t=music';" </td>
+          <td><input type="button" value="PLAY" onclick="location.href='music2.html';" </td>
         </tr>
-        <tr class='clickable-row' data-href='C:/xampp/htdocs/test2/audio/3.mp3'>
+        <tr>
           <th scope="row">3</th>
           <td>Psycho</td>
           <td>Post Malone</td>
           <td>@Single</td>
-          <td><input type="button" value="PLAY" onclick="location.href='watch.html?id=3&t=music';" </td>
+          <td><input type="button" value="PLAY" onclick="location.href='music3.html';" </td>
         </tr>
-        <tr class='clickable-row' data-href='C:/xampp/htdocs/test2/audio/4.mp3'>
+        <tr>
           <th scope="row">4</th>
           <td>Burning Man</td>
           <td>Post Malone</td>
           <td>@Single</td>
-          <td><input type="button" value="PLAY" onclick="location.href='watch.html?id=4&t=music';" </td>
+          <td><input type="button" value="PLAY" onclick="location.href='music4.html';" </td>
         </tr>
-        <tr class='clickable-row' data-href='C:/xampp/htdocs/test2/audio/5.mp3'>
+        <tr>
           <th scope="row">5</th>
           <td>Dance Dance</td>
           <td>Fall Out Boy</td>
           <td>From Under The Cork Tree</td>
-          <td><input type="button" value="PLAY" onclick="location.href='watch.htlm?id=5&t=music';" </td>
+          <td><input type="button" value="PLAY" onclick="location.href='music5.html';" </td>
         </tr>
       </tbody>
     </table>

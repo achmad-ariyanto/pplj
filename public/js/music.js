@@ -6,6 +6,6 @@ jQuery(document).ready(function($) {
   		console.log(source.src);
   		audio.load(); //call this to just preload the audio without playing
   		audio.play(); //call this to play the song right away
-        //window.location = $(this).data("href");
+        window.location = $(this).data("href");
     });
 });
